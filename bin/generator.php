@@ -1,5 +1,8 @@
 <?php
-require_once __DIR__ . "/../vendor/composer/autoload.php";
+
+if (false === class_exists('\\Composer\\Autoload\\ClassLoader')) {
+    require_once __DIR__ . "/../vendor/autoload.php";
+}
 
 use Symfony\Component\Console\Application;
 
